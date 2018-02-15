@@ -1,0 +1,26 @@
+PerfMon
+azspriggs@gmail.com
+
+This app leverages and extends the Netmeter app:
+https://github.com/dphans/android-labs/tree/master/NetMeterk
+to provide performance monitoring (battery and cpu).  
+
+The PerfMon tool is an Android application and service which can be used for a variety of performance-related 
+monitoring and analysis activities.  The tool is a work in progress - any comments/suggestions/complaints 
+are welcome and encouraged.  
+
+Some key features of the tool include:
+- Watching CPU usage over time
+- Watching Memory usage over time
+- Monitoring memory usage of individual applications over time
+- Tracking instances of low memory by notifying and logging memory usage whenever the Android Activity Manager starts reclaiming memory due to low memory conditions.
+- Forcefully allocating native RAM to simulate low memory conditions.  This can be useful to simulate the effects of adding additional code to a product which may already be tight on RAM or to analyze the effects of a low memory condition on KPI metrics.
+- Launching the browser with a predefined set of browser profiles and capturing memory usage.  This was introduced to help test part of the Webtop3.0 feature.
+- Forcefully dumping procrank output to a log file.
+
+Important Notes:
+The app does not hold any wake locks, but does result in a non-negligable CPU and Memory overhead as it includes a service which polls every 5 seconds.
+The app will work on ICS and later Android versions but has not been updated since JellyBean timeframe.  Since that time, SELinux policy has blocked the app
+from looking at certain areas like /proc - some work needs to be done to resolve this and restore some of this functionality.
+
+

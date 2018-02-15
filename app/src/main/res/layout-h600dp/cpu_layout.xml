@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/cpudetails" />
+
+            <TextView
+                android:id="@+id/cpudetails"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/cpuAll" />
+
+            <TextView
+                android:id="@+id/cpuAllstat"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/cpu0" />
+
+            <TextView
+                android:id="@+id/cpu0stat"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/currentfreq0" />
+
+            <TextView
+                android:id="@+id/currentfreq0"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/cpu1" />
+
+            <TextView
+                android:id="@+id/cpu1stat"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/currentfreq1" />
+
+            <TextView
+                android:id="@+id/currentfreq1"
+                android:gravity="right"
+                android:padding="3dip" />
+        </TableRow>
+
+        <com.kspriggs.tools.perfmon.GraphView
+            android:id="@+id/graph"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:padding="3dip"
+            android:text="@string/prochead" />
+
+        <TextView
+            android:id="@+id/prochead"
+            android:padding="3dip"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/proc1"
+            android:padding="3dip"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/proc2"
+            android:padding="3dip"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/proc3"
+            android:padding="3dip"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/proc4"
+            android:padding="3dip"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/proc5"
+            android:padding="3dip"
+            android:textSize="8sp" />
+    </TableLayout>
+
+</LinearLayout>

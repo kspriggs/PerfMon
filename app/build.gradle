@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    //buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.motorola.tools.perfmon"
+        minSdkVersion 11
+        targetSdkVersion 22
+
+        ndk {
+            //TODO - remove this limitation, only there protecting the libprocrank.so
+            abiFilters 'armeabi-v7a'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    //This is to introduce libprocrank.so - required on user builds where /system/xbin/procrank is not present
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['../libs']
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path '../jni/CMakeLists.txt'
+        }
+    }
+    //This is to introduce libprocrank.so - required on user builds where /system/xbin/procrank is not present
+    dependencies {
+        compile fileTree(include: ['libprocrank.so'], dir: 'libs')
+    }
+}

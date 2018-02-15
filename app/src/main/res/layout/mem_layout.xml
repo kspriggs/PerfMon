@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/procmeminfo"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/memtotal"
+                android:gravity="right"
+                android:padding="3dip"
+                android:textSize="9sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/actmgrinfo"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/availMem"
+                android:gravity="right"
+                android:padding="3dip"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/lowmeminfo"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/lowMemory"
+                android:gravity="right"
+                android:padding="3dip"
+                android:textSize="10sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:padding="3dip"
+                android:text="@string/procswapinfo"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/swaptotal"
+                android:gravity="right"
+                android:padding="3dip"
+                android:textSize="9sp" />
+        </TableRow>
+
+
+        <com.kspriggs.tools.perfmon.GraphView
+            android:id="@+id/graph"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp" />
+
+        <com.kspriggs.tools.perfmon.GraphView
+            android:id="@+id/customgraph1"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp" />
+
+        <com.kspriggs.tools.perfmon.GraphView
+            android:id="@+id/customgraph2"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp" />
+
+        <TextView
+            android:id="@+id/topmemhead"
+            android:padding="3dip"
+            android:text="@string/topmemhead"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/prochead"
+            android:padding="3dip"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/proc1"
+            android:padding="3dip"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/proc2"
+            android:padding="3dip"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/proc3"
+            android:padding="3dip"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/proc4"
+            android:padding="3dip"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/proc5"
+            android:padding="3dip"
+            android:textSize="8sp" />
+    </TableLayout>
+
+</LinearLayout>

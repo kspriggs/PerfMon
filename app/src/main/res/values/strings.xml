@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PerfMon</string>
+    <string name="sum_tab">Static Info</string>
+    <string name="cpu_tab">CPU</string>
+    <string name="mem_tab">MEM</string>
+    <string name="more">More</string>
+    <string name="showproc">Show Full Top Output</string>
+    <string name="showprocrank">Show Top 5 Memory Users</string>
+    <string name="hideprocrank">Hide Top 5 Memory Users</string>
+    <string name="showmeminfo">Show Full Procrank Output</string>
+    <string name="hideproc">Hide Top List</string>
+    <string name="hidememinfo">Hide Procrank List</string>
+    <string name="sortbypss">Sort by PSS</string>
+    <string name="sortbycpu">Sort by CPU</string>
+    <string name="exit">Exit</string>
+    <string name="disp_collecting">Collecting Data...</string>
+    <string name="toplist_header">CPU% oom_adj PSS Process name</string>
+    <string name="procranklist_header">PSS  PSSAvg  Process name</string>
+    <string name="cpudetails">CPU Type</string>
+    <string name="cpuAll">CPU All [Tot% (Usr/Sys)]</string>
+    <string name="cpu0">CPU 0 [Tot% (Usr/Sys)]</string>
+    <string name="cpu1">CPU 1 [Tot% (Usr/Sys)]</string>
+    <string name="currentfreq0">CPU 0 Curr (Max) Freq</string>
+    <string name="currentfreq1">CPU 1 Curr (Max) Freq</string>
+    <string name="prochead">Top CPU Consuming Processes</string>
+    <string name="memhead">Memory Summary:</string>
+    <string name="topmemhead">Top Memory Consuming Processes:</string>
+    <string name="notification_title">Performance Monitor</string>
+    <string name="notification_text">Resume UI for PerfMon App</string>
+    <string name="procmeminfo">MemTotal : MemFree+Buffers+Cache (Buffers, Cache)</string>
+    <string name="procswapinfo">SwapTotal : SwapFree</string>
+    <string name="actmgrinfo">ActMgr: Available Memory - Low Memory Indicator</string>
+    <string name="lowmeminfo">Times onLowMem called : Times onTrimMem called</string>
+    <string name="memfreegraph">MemFree+Cache+Buffers (green) AvailMem (yellow)</string>
+    <string name="lastmeasured">Last Measured: </string>
+    <string name="populating">Gathering Data...</string>
+    <string name="changegraph">Customize</string>
+    <string name="watchcustom1">Watch Custom1</string>
+    <string name="watchcustom2">Watch Custom2</string>
+    <string name="watchcustom3">Watch Custom3</string>
+    <string name="hidecustom1">Hide Custom1</string>
+    <string name="hidecustom2">Hide Custom2</string>
+    <string name="hidecustom3">Hide Custom3</string>
+    <string name="changecustom1">Change Custom1 String</string>
+    <string name="changecustom2">Change Custom2 String</string>
+    <string name="changecustom3">Change Custom3 String</string>
+    <string name="setcustom1">Set Watch String 1</string>
+    <string name="setcustom2">Set Watch String 2</string>
+    <string name="setcustom3">Set Watch String 3</string>
+    <string name="setcustomtitle">Set Custom Watch String</string>
+    <string name="setcustomtext">Enter the name of a process (ex: com.android.browser)</string>
+    <string name="reservememtitle">Allocate Memory</string>
+    <string name="reservememtext">Enter the amount of memory to reserve in MB.  You will be notified when memory allocation is complete.</string>
+    <string name="memtesttitle">Memory Speed Test</string>
+    <string name="memtesttext">Enter the size of memory to test in MB.  The test will run for about an hour and measure allocation times over a range of free memory.</string>
+    <string name="memtestresulttitle">Memory Speed Test Results</string>
+    <string name="memtestresulttext">It took too long. </string>
+    <string name="lowmemtesttitle">Low Memory Simulation</string>
+    <string name="lowmemtesttext">This will force the system into a low memory condition by opening a number of apps that do nothing but consume memory and then move to the background.  It is recommended that you stop forcing low memory prior to running any performance measurement testing.</string>
+    <string name="lowmemappswitchtesttitle">Low Memory App Switching Simulation</string>
+    <string name="lowmemappswitchtesttext">This will force the system into a low memory condition by opening a number of apps that do nothing but consume memory and then move to the background.  It will then simulate switching between two apps with Large (100M) usage.</string>
+    <string name="runaction">Run Test</string>
+    <string name="promptmedbrowser">Run Medium Browser Profile?</string>
+    <string name="prompthibrowser">Run High Browser Profile?</string>
+    <string name="runmedbrowser">Run Med Brws</string>
+    <string name="runhibrowser">Run Hi Brws</string>
+    <string name="launchmedbrowser">Launch Med Brws</string>
+    <string name="launchhibrowser">Launch Hi Brws</string>
+    <string name="runlowmem">Force Low Memory</string>
+    <string name="stoplowmem">Stop Forcing Low Memory</string>
+    <string name="runtrace">Start Monitoring Trace (standard)</string>
+    <string name="runtracemod">Start Monitoring Trace (modified)</string>
+    <string name="stoptrace">Stop Monitoring Trace File</string>
+    <string name="tracetesttitle">Monitoring Trace File</string>
+    <string name="starttracetesttext">Starting to Monitor Trace File using Pattern Matcher method.  <b>Note - you must have copied a valid trace file to /data/trace!</b></string>
+    <string name="starttracemodtesttext">Starting to Monitor Trace File using String method. <b>Note - you must have copied a valid trace file to /data/trace!</b></string>
+    <string name="stoptracetesttext">Stopping Trace File Monitoring</string>
+    <string name="runlowmemappswitch">Simulate Low Memory App Switch</string>
+    <string name="stoplowmemappswitch">Stop Low Memory App Switch</string>
+    <string name="runappswitch">Simulate App Switch</string>
+    <string name="stopappswitch">Stop App Switch</string>
+    <string name="runmemtest">Run Memory Speed Test</string>
+    <string name="testdesc">Test Descriptions</string>
+    <string name="runbrowserinst">The browser will be automatically launched to run the profile selected.  After completion see browser graph for detailed memory information.</string>
+    <string name="runtest">Run Test</string>
+    <string name="logprocrank">Log Procrank</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="reset">Reset</string>
+    <string name="reservemem">Allocate Memory</string>
+    <string name="checkmem">Check Memory</string>
+    <string name="freemem">Free Memory</string>
+    <string name="toggle">Toggle Scale</string>
+    <string name="displaywidthpx">Display Width in pixels</string>
+    <string name="displayheightpx">Display Height in pixels</string>
+    <string name="displaywidth">Display Width in dp</string>
+    <string name="displayheight">Display Height in dp</string>
+    <string name="displaydensity">Display Density in dpi</string>
+    <string name="FRAG_TYPE">FRAG_TYPE</string>
+    <string name="thresh">LMK Thresh:</string>
+    <string name="helptitle">\n<big>
+            <b>PerfMon - Test Descriptions:</b>
+        </big></string>
+    <string name="helptext">        
+        \n<b>Allocate Memory - </b>Allocate a user-specified amount of memory from native Free Memory.
+        \n<b>Free Memory - </b>Free all previously allocated memory.
+        \n<b>Log Procrank - </b>Runs the procrank tool and dumps output to SD card.
+        \n<b>Run Med Brws - </b>Launch URLs of the Medium Browser Profile consecutively every 15 seconds.
+        Once the profile is fully launched return to the PerfMon application where a graph of the Browser 
+        Memory usage will be displayed.  Pink markers highlight the position of test start and end.  High and 
+        Low Memory values are highlighted in Red and Cyan.
+        \n<b>Run Hi Brws - </b>Same as above except launch URLs of the High Browser Profile.
+        \n<b>Launch Med/Hi Brws - </b>ame as "Run Med/Hi Brws" except control does not automatically return to the Perf 
+        app.  Instead, the browser is left in the foreground - useful if additional testing is desired while the
+        given profile is active.  Users can always return to the PerfMon app to view Memory usage.</string>
+    <string name="foregroundAppThreshold">LMK: Foreground App Threshold (MB)</string>
+    <string name="visibleAppThreshold">LMK: Visible App Threshold (MB)</string>
+    <string name="secondaryServerThreshold">LMK: Secondary Server Threshold (MB)</string>
+    <string name="hiddenAppThreshold">LMK: Hidden App Threshold (MB)</string>
+    <string name="contentProviderThreshold">LMK: Content Provider Threshold (MB)</string>
+    <string name="emptyAppThreshold">LMK: Empty App Threshold (MB)</string>
+    <string name="cpugraph">\n<big>
+            <b>Processor Usage Graph</b>
+        </big></string>
+    <string name="memgraph">\n<big>
+            <b>Android Free Memory Graph</b>
+        </big></string>
+    <string name="custom1graph">\n<big>
+            <b>Custom Watch 1 Graph</b>
+        </big></string>
+    <string name="custom2graph">\n<big>
+            <b>Custom Watch 2 Graph</b>
+        </big></string>
+    <string name="custom3graph">\n<big>
+            <b>Custom Watch 3 Graph</b>
+        </big></string>
+    <string name="procrank">libprocrank.so</string>
+    <string name="graphcpudetail">Graph CPU Detail</string>
+    <string name="graphcpubasic">Graph CPU Basic</string>
+
+</resources>
